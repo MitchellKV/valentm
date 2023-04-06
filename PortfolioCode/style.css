@@ -1,44 +1,67 @@
-header{
-    background-color: black;
-    overflow: hidden;
-    height: 6rem;
-    color: white;
-    text-align: center;
+@font-face{
+    font-family: berlin sans fb demi;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Berlin Sans FB Demi'), url(https://fonts.cdnfonts.com/s/13625/BRLNSDB.woff) format('woff')
 }
-.mainbar>a{
-    float: left;
-    color: white;
-    text-align: center;
-}
-.bottomtext{
-    background-color: black;
-    overflow: hidden;
-    bottom: 0%;
-    width: 100%;
-    height: 6rem;
-    color: white;
-    text-align: center;
-}
-.metext{
-    text-align: center;
-    color: black;
-}
-.backgroundimage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-}
-body{
+html, body{
     margin: 0;
+    font-family: "Berlin Sans FB Demi";
+    font-size: 1.5;
 }
-.blurry{
-    background-image: url(images/Asset\ 1.png);
-    filter: blur(8px);
-  -webkit-filter: blur(8px); 
-  width: 110vw;
-  height: 110vh;
-  background-size: cover;
-  position: fixed;
-  z-index: -1;
+.header{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+.header-images{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 80px;
+}
+.dropdown{
+    display: flex;
+    color: white;
+    justify-items: center;
+    justify-content: center;
+}
+.dropdown:hover > .dropdown-list{
+    display: grid;
+    position: absolute;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    background-color: black;
+    position: absolute;
+    margin-top: 100px;
+    width: 700%;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.dropdown:hover .dropdown-list li{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+.dropdown-list{
+    display: none;
+}
+.main-image{
+    margin: 0px 0px -4px 0px;
+}
+.main-image>img{
+    width: 100%;
+}
+.footer{
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
