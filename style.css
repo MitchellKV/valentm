@@ -1,0 +1,110 @@
+@font-face {
+    font-family: berlin sans fb demi;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Berlin Sans FB Demi'), url(https://fonts.cdnfonts.com/s/13625/BRLNSDB.woff) format('woff')
+}
+
+html,
+body {
+    margin: 0;
+    font-family: "Berlin Sans FB Demi";
+    font-size: 1.5rem;
+
+}
+.header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+
+.header-images {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 80px;
+}
+
+
+.dropdown {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-right: 250px;
+}
+
+.dropdown input[type="checkbox"] {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.nav-list {
+   display: none; 
+}
+nav input[type="checkbox"]:checked + ul {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 100px;
+    width: 700px;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    list-style-type: none;
+}
+
+.main-image {
+    margin: 0px 0px -10px 0px;
+}
+
+.main-image>img {
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.content-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+.item3 {
+    margin-bottom: 100px;
+    margin-right: 50px;
+}
+.item2 {
+    margin-top: 30px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: .25rem;
+    border-radius: 2rem;
+    margin-bottom: 130px;
+}
+.item1 {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.item2 > p, h2 {
+    margin: 25px 25px 25px 25px;
+}
+
+
+
